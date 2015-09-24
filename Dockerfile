@@ -10,7 +10,7 @@ CMD ["/sbin/my_init"]
 # Install tools for compiled packages and common certificates
 RUN apt-get update -y && \
   apt-get install --no-install-recommends -y \
-  build-essential ca-certificates checkinstall \
+  build-essential ca-certificates checkinstall git \
   libreadline-gplv2-dev libncursesw5-dev libssl-dev \
   libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 
